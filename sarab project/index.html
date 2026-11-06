@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sarab — bold fast food, fresh ingredients, and friendly service.">
+    <title>
+      Sarab — Fast Food &amp; Restaurant
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="svg-phone" viewBox="0 0 24 24">
+        <path d="M5 3h3l2 5-2 1.5a15 15 0 0 0 6.5 6.5L16 14l5 2v3a2 2 0 0 1-2 2C10 20 4 14 3 5a2 2 0 0 1 2-2Z"/>
+      </symbol>
+      <symbol id="svg-email" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/>
+      </symbol>
+      <symbol id="svg-location-marker" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>
+      </symbol>
+      <symbol id="svg-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+      </symbol>
+      <symbol id="svg-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 5l7 7-7 7"/>
+      </symbol>
+      <symbol id="svg-search" viewBox="0 0 24 24">
+        <circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/>
+      </symbol>
+      <symbol id="svg-cutlery" viewBox="0 0 24 24">
+        <path d="M5 3v6M8 3v6M11 3v6M8 9v12M18 3c-2 2-3 5-3 8h3v10"/>
+      </symbol>
+      <symbol id="svg-flame" viewBox="0 0 24 24">
+        <path d="M12 22c4 0 7-3.1 7-7.2 0-3.4-2-5.5-4.5-8.8 0 2.4-.8 3.7-2 4.8C12 8 11 5.2 8.5 2 9 7.2 5 10 5 14.8 5 19 8.1 22 12 22Z"/><path d="M12 18c1.5 0 2.5-1.2 2.5-2.7 0-1-.5-2-1.5-3.1-.1 1.1-.5 1.7-1.2 2.1-.1-.8-.6-1.4-1.2-2-.6 2.1-1.1 2.6-1.1 3.3 0 1.4 1.1 2.4 2.5 2.4Z"/>
+      </symbol>
+      <symbol id="svg-star" viewBox="0 0 24 24">
+        <path d="m12 2.5 2.9 6 6.6 1-4.8 4.7 1.1 6.6-5.8-3.1-5.8 3.1 1.1-6.6-4.8-4.7 6.6-1Z"/>
+      </symbol>
+      <symbol id="svg-shopping-bag" viewBox="0 0 24 24">
+        <path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/>
+      </symbol>
+      <symbol id="svg-leaf" viewBox="0 0 24 24">
+        <path d="M20 4c-9 0-15 4-15 11a5 5 0 0 0 5 5c7 0 11-7 10-16Z"/><path d="M4 21c3-5 7-8 12-11"/>
+      </symbol>
+      <symbol id="svg-chef" viewBox="0 0 24 24">
+        <path d="M6 12a4 4 0 1 1 1-7 5 5 0 0 1 10 1 3 3 0 1 1 1 6v7H6v-7Z"/><path d="M6 15h12"/>
+      </symbol>
+      <symbol id="svg-delivery-truck" viewBox="0 0 24 24">
+        <path d="M2 5h12v12H2zM14 9h5l3 4v4h-8z"/><circle cx="6.5" cy="19" r="2"/><circle cx="18" cy="19" r="2"/>
+      </symbol>
+      <symbol id="svg-group" viewBox="0 0 24 24">
+        <circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1zM16 5.5a3 3 0 0 1 0 5.8M18 14a5 5 0 0 1 3 4.6V20"/>
+      </symbol>
+      <symbol id="svg-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h2M14 14h2M8 17h2"/>
+      </symbol>
+      <symbol id="svg-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>
+      </symbol>
+      <symbol id="svg-comment" viewBox="0 0 24 24">
+        <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-4.7a9 9 0 0 1-.9-4.3A8.5 8.5 0 0 1 12.5 3H13a8.5 8.5 0 0 1 8 8v.5Z"/>
+      </symbol>
+    <symbol id="brand-facebook" viewBox="0 0 24 24"><path d="M15.7 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5H19V3.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.2v2.3H9.5v3.2h2.8V21h3.4Z" fill="currentColor"/></symbol>
+    <symbol id="brand-instagram" viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="brand-tiktok" viewBox="0 0 24 24"><path d="M16.6 5.8a5 5 0 0 0 3.4 1.9v3.3a8.5 8.5 0 0 1-3.4-.9v5.5a5.7 5.7 0 1 1-5.7-5.7c.3 0 .7 0 1 .1v3.4a2.3 2.3 0 1 0 1.4 2.1V2.5h3.3c0 1.2.4 2.4 1.1 3.3Z" fill="currentColor"/></symbol>
+    <symbol id="brand-twitter" viewBox="0 0 24 24"><path d="M23 4.8a9 9 0 0 1-2.6.7 4.5 4.5 0 0 0 2-2.5 9 9 0 0 1-2.9 1.1 4.5 4.5 0 0 0-7.7 4.1A12.8 12.8 0 0 1 2.5 3.5a4.5 4.5 0 0 0 1.4 6 4.5 4.5 0 0 1-2-.6v.1a4.5 4.5 0 0 0 3.6 4.4 4.5 4.5 0 0 1-2 .1 4.5 4.5 0 0 0 4.2 3.1 9 9 0 0 1-5.6 1.9H1A12.8 12.8 0 0 0 8 20.6c8.4 0 13-7 13-13v-.6A9 9 0 0 0 23 4.8Z" fill="currentColor"/></symbol>
+    <symbol id="brand-youtube" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M23 7.1a3.1 3.1 0 0 0-2.2-2.2C18.9 4.4 12 4.4 12 4.4s-6.9 0-8.8.5A3.1 3.1 0 0 0 1 7.1 32 32 0 0 0 .5 12 32 32 0 0 0 1 16.9a3.1 3.1 0 0 0 2.2 2.2c1.9.5 8.8.5 8.8.5s6.9 0 8.8-.5a3.1 3.1 0 0 0 2.2-2.2 32 32 0 0 0 .5-4.9 32 32 0 0 0-.5-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"/></symbol>
+    </svg>
+    <div class="contact-bar">
+      <div class="content-width bar-content">
+        <div class="contact-details">
+          <a href="tel:+18001234567"><svg class="ui-icon"><use href="#svg-phone"/></svg> +1 (800) 123-4567</a> <a href="mailto:hello@sarabfood.com"><svg class="ui-icon"><use href="#svg-email"/></svg> hello@sarabfood.com</a> <span><svg class="ui-icon"><use href="#svg-location-marker"/></svg> 42 Flavor Street, NY</span>
+        </div>
+        <div class="delivery-promo">
+          <p>
+            <svg class="ui-icon"><use href="#svg-delivery-truck"/></svg> FREE DELIVERY TODAY!
+          </p>
+          <div class="header-social">
+            <a href="#restaurant-contact" aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#brand-facebook"/></svg></a><a href="#restaurant-contact" aria-label="Instagram"><svg class="social-icon" aria-hidden="true"><use href="#brand-instagram"/></svg></a><a href="#restaurant-contact" aria-label="TikTok"><svg class="social-icon" aria-hidden="true"><use href="#brand-tiktok"/></svg></a><a href="#restaurant-contact" aria-label="YouTube"><svg class="social-icon" aria-hidden="true"><use href="#brand-youtube"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="content-width nav-layout">
+        <a class="brand-link" href="#home-section" aria-label="Sarab home"><span class="brand-mark"><svg class="ui-icon" aria-hidden="true"><use href="#svg-cutlery"/></svg></span><span>S<span>arab</span><small>FAST FOOD &amp; RESTAURANT</small></span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="active-link" href="#home-section">Home</a><a href="#restaurant-about">About</a><a href="#restaurant-menu">Menu</a><a href="#restaurant-chefs">Chefs</a><a href="#table-reservation">Reservation</a><a href="#restaurant-contact">Contact</a>
+        </nav>
+        <a class="search-button" href="#menu-search-overlay" aria-label="Search"><svg class="ui-icon"><use href="#svg-search"/></svg></a> <a class="primary-button compact-button order-button" href="#restaurant-menu"><svg class="ui-icon"><use href="#svg-shopping-bag"/></svg> Order Now</a>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation">
+            <span></span><span></span><span></span>
+          </summary>
+          <nav aria-label="Mobile navigation">
+            <a href="#home-section">Home</a><a href="#restaurant-about">About</a><a href="#restaurant-menu">Menu</a><a href="#restaurant-chefs">Chefs</a><a href="#table-reservation">Reservation</a><a href="#restaurant-contact">Contact</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main>
+      <div class="search-overlay" id="menu-search-overlay" aria-label="Search Sarab">
+        <a class="close-button" href="#home-section" aria-label="Close search">×</a>
+        <div class="search-content">
+          <h2>
+            What are you craving today?
+          </h2>
+          <form class="search-form" action="#restaurant-menu" method="get">
+            <label class="sr-only" for="menu-search-field">
+              Search the menu
+            </label>
+            <input id="menu-search-field" type="search" name="q" placeholder="Search burgers, pizza, chicken..."><button type="submit" aria-label="Search"><svg class="ui-icon"><use href="#svg-search"/></svg></button>
+          </form>
+          <div class="search-categories">
+            <a href="#restaurant-menu"><img src="image/menu/1.jpg" alt="">All Items</a><a href="#restaurant-menu"><img src="image/menu/1.jpg" alt="">Burgers</a><a href="#restaurant-menu"><img src="image/menu/2.jpg" alt="">Pizza</a><a href="#restaurant-menu"><img src="image/menu/3.jpg" alt="">Chicken</a><a href="#restaurant-menu"><img src="image/menu/4.jpg" alt="">Wraps</a><a href="#restaurant-menu"><img src="image/menu/5.jpg" alt="">Pasta</a><a href="#restaurant-menu"><img src="image/menu/6.jpg" alt="">Desserts</a>
+          </div>
+          <div class="popular-searches">
+            <p>
+              ♨ &nbsp; Trending Searches
+            </p>
+            <a href="#restaurant-menu">Smash Burger</a><a href="#restaurant-menu">Nashville Chicken</a><a href="#restaurant-menu">Truffle Pizza</a><a href="#restaurant-menu">Lava Cake</a><a href="#restaurant-menu">Loaded Fries</a><a href="#restaurant-menu">Mango Shake</a>
+          </div>
+        </div>
+      </div>
+      <section class="main-banner" id="home-section">
+        <span class="banner-word" aria-hidden="true">FOOD</span>
+        <span class="banner-glow banner-glow-one" aria-hidden="true"></span>
+        <span class="banner-glow banner-glow-two" aria-hidden="true"></span>
+        <div class="content-width banner-content">
+          <div class="banner-text">
+            <span class="rating-label"><span>★</span> #1 Rated Fast Food Restaurant in New York</span>
+            <h1>
+              <span>Delicious</span><span class="heading-accent">Fast Food</span><span>for Every</span><span>Moment</span>
+            </h1>
+            <p>
+              Experience bold flavors crafted from premium ingredients. From crispy burgers to gourmet pizzas — every bite is an adventure worth savoring.
+            </p>
+            <div class="banner-actions">
+              <a class="primary-button" href="#restaurant-menu"><svg class="ui-icon"><use href="#svg-cutlery"/></svg> Explore Menu</a><a class="secondary-link" href="#restaurant-about"><span class="play-icon">▶</span> Watch Our Story</a>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>850<span>+</span></strong><small>Happy Customers</small>
+              </div>
+              <i class="stats-divider"></i>
+              <div>
+                <strong>120<span>+</span></strong><small>Menu Items</small>
+              </div>
+              <i class="stats-divider"></i>
+              <div>
+                <strong>15<span>+</span></strong><small>Expert Chefs</small>
+              </div>
+              <i class="stats-divider"></i>
+              <div>
+                <strong>12<span>yr</span></strong><small>Experience</small>
+              </div>
+            </div>
+          </div>
+          <div class="banner-image">
+            <div class="banner-shape">
+            </div>
+            <img src="image/banner-img.jpg" alt="Freshly made Sarab signature burger" class="signature-food">
+            <div class="deal-card">
+              <span class="deal-icon"><svg class="ui-icon"><use href="#svg-flame"/></svg></span><span><strong>Hot Deal</strong><small>30% off today</small></span>
+            </div>
+            <div class="banner-rating">
+              <span class="rating-icon"><svg class="ui-icon"><use href="#svg-star"/></svg></span><span class="rating-details"><strong>4.9/5</strong><small>2k+ reviews</small></span>
+            </div>
+            <div class="delivery-card">
+              <span class="delivery-icon"><svg class="ui-icon"><use href="#svg-clock"/></svg></span><span><strong>20 min</strong><small>Fast delivery</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ticker" aria-label="Our specialties">
+        <div class="ticker-track">
+          <div class="ticker-items">
+            <span>Crispy Fried Chicken <b>✦</b></span><span>Gourmet Burgers <b>✦</b></span><span>Artisan Pizzas <b>✦</b></span><span>Fresh Wraps &amp; Rolls <b>✦</b></span><span>Loaded Fries <b>✦</b></span><span>Ice Cream Shakes <b>✦</b></span><span>Grilled Sandwiches <b>✦</b></span>
+          </div>
+          <div class="ticker-items" aria-hidden="true">
+            <span>Crispy Fried Chicken <b>✦</b></span><span>Gourmet Burgers <b>✦</b></span><span>Artisan Pizzas <b>✦</b></span><span>Fresh Wraps &amp; Rolls <b>✦</b></span><span>Loaded Fries <b>✦</b></span><span>Ice Cream Shakes <b>✦</b></span><span>Grilled Sandwiches <b>✦</b></span>
+          </div>
+        </div>
+      </div>
+      <section class="page-section menu-categories" id="menu-categories">
+        <div class="content-width">
+          <div class="section-heading centered-title">
+            <span class="section-label">What We Offer</span>
+            <h2>
+              Browse by <em>Category</em>
+            </h2>
+            <p>
+              From sizzling burgers to exotic world cuisines — find your favorite in our menu.
+            </p>
+          </div>
+          <div class="category-grid">
+            <a class="category-card selected-category" href="#restaurant-menu"><img class="category-image" src="image/category/1.jpg" alt="All Sarab menu items"><span class="category-caption"><strong>All Items</strong><small>99 items</small></span></a> <a class="category-card" href="#menu-burgers"><img class="category-image" src="image/category/2.jpg" alt="Gourmet burger"><span class="category-caption"><strong>Burgers</strong><small>24 items</small></span></a> <a class="category-card" href="#menu-pizza"><img class="category-image" src="image/category/3.jpg" alt="Freshly baked pizza"><span class="category-caption"><strong>Pizza</strong><small>18 items</small></span></a> <a class="category-card" href="#menu-chicken"><img class="category-image" src="image/category/4.jpg" alt="Crispy fried chicken"><span class="category-caption"><strong>Fried Chicken</strong><small>15 items</small></span></a> <a class="category-card" href="#menu-wraps"><img class="category-image" src="image/category/5.jpg" alt="Fresh wrap"><span class="category-caption"><strong>Wraps</strong><small>12 items</small></span></a> <a class="category-card" href="#menu-desserts"><img class="category-image" src="image/category/6.jpg" alt="Sweet dessert"><span class="category-caption"><strong>Desserts</strong><small>20 items</small></span></a>
+          </div>
+        </div>
+      </section>
+      <section class="page-section about-section" id="restaurant-about">
+        <div class="content-width about-layout">
+          <div class="about-photos">
+            <img class="about-photo" src="image/about1.jpg" alt="The Sarab restaurant kitchen"> <img class="detail-photo" src="image/about2.jpg" alt="Fresh food prepared at Sarab">
+            <div class="experience-badge">
+              <strong>12<span>+</span></strong><small>Years of<br>excellence</small>
+            </div>
+          </div>
+          <div class="about-copy">
+            <span class="section-label">Our Story</span>
+            <h2>
+              We Invite You to Visit<br>Our <em>Food Restaurant</em>
+            </h2>
+            <p class="about-description">
+              Founded in 2012, Sarab began as a small corner joint with a big dream — to serve food that brings people together. Today we're proud to serve thousands of happy customers every week with the same passion that started it all.
+            </p>
+            <div class="benefit-list">
+              <div>
+                <span class="benefit-icon"><svg class="ui-icon"><use href="#svg-leaf"/></svg></span><span><strong>100% Fresh Ingredients</strong><small>We source locally and sustainably. Every ingredient is hand-picked daily.</small></span>
+              </div>
+              <div>
+                <span class="benefit-icon"><svg class="ui-icon"><use href="#svg-chef"/></svg></span><span><strong>Award-Winning Recipes</strong><small>Our signature recipes have won national culinary awards five years in a row.</small></span>
+              </div>
+              <div>
+                <span class="benefit-icon"><svg class="ui-icon"><use href="#svg-delivery-truck"/></svg></span><span><strong>Lightning-Fast Delivery</strong><small>Order online and get hot, fresh food at your door in under 25 minutes.</small></span>
+              </div>
+            </div>
+            <a class="primary-button" href="#restaurant-menu"> View Full Menu <svg class="ui-icon"><use href="#svg-arrow"/></svg></a>
+          </div>
+        </div>
+      </section>
+      <section class="page-section menu-section" id="restaurant-menu">
+        <div class="content-width">
+          <div class="section-heading menu-heading">
+            <div>
+              <span class="section-label">What's Cooking</span>
+              <h2>
+                Our Delicious <em>Menu</em>
+              </h2>
+            </div>
+          </div>
+          <nav class="category-tabs" aria-label="Menu categories">
+            <a class="selected-category" href="#restaurant-menu">All</a><a href="#menu-burgers">Burgers</a><a href="#menu-pizza">Pizza</a><a href="#menu-chicken">Chicken</a><a href="#menu-wraps">Wraps</a><a href="#menu-desserts">Desserts</a><a href="#menu-pasta">Pasta</a>
+          </nav>
+          <div class="product-grid">
+            <article class="product-card" id="menu-burgers">
+              <div class="item-image">
+                <img src="image/menu/1.jpg" alt="Classic smash burger"><span class="item-badge hot-badge">HOT</span><button class="add-button" type="button" aria-label="Add classic smash burger">+</button>
+              </div>
+              <div class="item-info">
+                <div class="item-category">
+                  BURGERS <span>★★★★★ <small>(128)</small></span>
+                </div>
+                <h3>
+                  Classic Smash Burger
+                </h3>
+                <p>
+                  Double smashed patty, cheddar, caramelized onions, pickles &amp; special sauce.
+                </p>
+                <div class="item-price">
+                  <strong>$14.99</strong><del>$18.99</del><span><svg class="ui-icon"><use href="#svg-clock"/></svg> 15 min</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" id="menu-pizza">
+              <div class="item-image">
+                <img src="image/menu/2.jpg" alt="Margherita Royale pizza"><span class="item-badge new-badge">NEW</span><button class="add-button" type="button" aria-label="Add Margherita Royale">+</button>
+              </div>
+              <div class="item-info">
+                <div class="item-category">
+                  PIZZA <span>★★★★★ <small>(95)</small></span>
+                </div>
+                <h3>
+                  Margherita Royale
+                </h3>
+                <p>
+                  San Marzano tomatoes, buffalo mozzarella, basil &amp; truffle oil on sourdough.
+                </p>
+                <div class="item-price">
+                  <strong>$19.99</strong><del>$24.99</del><span><svg class="ui-icon"><use href="#svg-clock"/></svg> 20 min</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" id="menu-chicken">
+              <div class="item-image">
+                <img src="image/menu/3.jpg" alt="Nashville hot chicken"><span class="item-badge bestseller-badge">BEST SELLER</span><button class="add-button" type="button" aria-label="Add Nashville hot chicken">+</button>
+              </div>
+              <div class="item-info">
+                <div class="item-category">
+                  CHICKEN <span>★★★★★ <small>(210)</small></span>
+                </div>
+                <h3>
+                  Nashville Hot Chicken
+                </h3>
+                <p>
+                  Crispy fried chicken in fiery Nashville spice blend with a honey drizzle.
+                </p>
+                <div class="item-price">
+                  <strong>$12.99</strong><del>$16.99</del><span><svg class="ui-icon"><use href="#svg-clock"/></svg> 18 min</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" id="menu-wraps">
+              <div class="item-image">
+                <img src="image/menu/4.jpg" alt="Loaded fajita wrap"><button class="add-button" type="button" aria-label="Add loaded fajita wrap">+</button>
+              </div>
+              <div class="item-info">
+                <div class="item-category">
+                  WRAPS <span>★★★★★ <small>(74)</small></span>
+                </div>
+                <h3>
+                  Loaded Fajita Wrap
+                </h3>
+                <p>
+                  Grilled chicken, peppers, sour cream &amp; guacamole in a warm tortilla.
+                </p>
+                <div class="item-price">
+                  <strong>$10.99</strong><span><svg class="ui-icon"><use href="#svg-clock"/></svg> 12 min</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" id="menu-desserts">
+              <div class="item-image">
+                <img src="image/menu/5.jpg" alt="Nutella lava cake"><span class="item-badge new-badge">NEW</span><button class="add-button" type="button" aria-label="Add Nutella lava cake">+</button>
+              </div>
+              <div class="item-info">
+                <div class="item-category">
+                  DESSERTS <span>★★★★★ <small>(56)</small></span>
+                </div>
+                <h3>
+                  Nutella Lava Cake
+                </h3>
+                <p>
+                  Molten chocolate cake, vanilla ice cream &amp; a drizzle of salted caramel.
+                </p>
+                <div class="item-price">
+                  <strong>$8.99</strong><del>$11.99</del><span><svg class="ui-icon"><use href="#svg-clock"/></svg> 10 min</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" id="menu-pasta">
+              <div class="item-image">
+                <img src="image/menu/6.jpg" alt="Truffle mushroom pasta"><span class="item-badge chef-badge">CHEF'S PICK</span><button class="add-button" type="button" aria-label="Add truffle mushroom pasta">+</button>
+              </div>
+              <div class="item-info">
+                <div class="item-category">
+                  PASTA <span>★★★★★ <small>(88)</small></span>
+                </div>
+                <h3>
+                  Truffle Mushroom Pasta
+                </h3>
+                <p>
+                  Al dente tagliatelle, wild mushrooms, black truffle, parmesan &amp; thyme.
+                </p>
+                <div class="item-price">
+                  <strong>$16.99</strong><span><svg class="ui-icon"><use href="#svg-clock"/></svg> 18 min</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="menu-footer">
+            <a class="secondary-link menu-link" href="#restaurant-contact">View Full Menu</a>
+          </div>
+        </div>
+      </section>
+      <section class="offer-section">
+        <div class="content-width offer-content">
+          <div class="offer-text">
+            <span class="section-label section-eyebrow">LIMITED TIME OFFER</span>
+            <h2>
+              Get 30% Off<br>Our Signature<br><em>Burger Meal</em>
+            </h2>
+            <p>
+              Don't miss our weekend special — grab our award-winning signature burger combo with loaded fries and a premium shake.
+            </p>
+            <div class="offer-countdown">
+              <div>
+                <strong>07</strong><small>HOURS</small>
+              </div>
+              <div>
+                <strong>54</strong><small>MINUTES</small>
+              </div>
+              <div>
+                <strong>43</strong><small>SECONDS</small>
+              </div>
+            </div>
+            <a class="primary-button light-button" href="#restaurant-menu">Grab the deal <svg class="ui-icon"><use href="#svg-arrow"/></svg></a>
+          </div>
+          <div class="offer-image">
+            <img src="image/off-img.jpg" alt="Sarab signature burger meal with loaded fries">
+            <div class="price-badge">
+              <strong>$17<sup>.49</sup></strong>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section gallery-section" id="restaurant-gallery">
+        <div class="content-width">
+          <div class="section-heading centered-title">
+            <span class="section-label">Food Showcase</span>
+            <h2>
+              Let's See Our <em>Fast Food</em>
+            </h2>
+          </div>
+          <div class="gallery-grid">
+            <a class="gallery-card featured-gallery-item" href="#menu-burgers"><img src="image/portfolio/work1.jpg" alt="Gourmet burgers"><span><small>01 / SIGNATURE</small><strong>Gourmet Burgers</strong><i>↗</i></span></a> <a class="gallery-card" href="#menu-pizza"><img src="image/portfolio/work2.jpg" alt="Wood fired pizza"><span><small>02 / FROM THE OVEN</small><strong>Wood-Fired Pizza</strong><i>↗</i></span></a> <a class="gallery-card" href="#menu-chicken"><img src="image/portfolio/work3.jpg" alt="Crispy fried chicken"><span><small>03 / CRUNCH TIME</small><strong>Crispy Fried Chicken</strong><i>↗</i></span></a> <a class="gallery-card" href="#menu-desserts"><img src="image/portfolio/work4.jpg" alt="Sarab desserts"><span><small>04 / A SWEET FINISH</small><strong>Sweet Desserts</strong><i>↗</i></span></a> <a class="gallery-card" href="#menu-wraps"><img src="image/portfolio/work5.jpg" alt="Fresh wraps and rolls"><span><small>05 / FRESH &amp; FLAVORFUL</small><strong>Fresh Wraps &amp; Rolls</strong><i>↗</i></span></a>
+          </div>
+        </div>
+      </section>
+      <section class="page-section history-section">
+        <div class="content-width">
+          <div class="section-heading centered-title">
+            <span class="section-label">Our Journey</span>
+            <h2>
+              A History of <em>Restaurant</em>
+            </h2>
+            <p>
+              From humble beginnings to the city's most beloved restaurant — every chapter written with passion.
+            </p>
+          </div>
+          <div class="history-grid">
+            <article>
+              <span class="history-marker">01</span><small>2012</small>
+              <h3>
+                Evolution of Restaurants
+              </h3>
+              <p>
+                Sarab opens its first 20-seat diner on Flavor Street. Within three months, lines stretch around the block every evening as word of our food spreads.
+              </p>
+            </article>
+            <article>
+              <span class="history-marker">02</span><small>2015</small>
+              <h3>
+                Fine Dining &amp; The Concept
+              </h3>
+              <p>
+                We introduced our signature tasting menu and hired our first Michelin-trained chef, elevating our craft to remarkable new heights.
+              </p>
+            </article>
+            <article>
+              <span class="history-marker">03</span><small>2019</small>
+              <h3>
+                Modern Fast Food Origins
+              </h3>
+              <p>
+                We launched our signature fast-food line, merging gourmet quality with speed and convenience. Within six months, we won three prestigious culinary awards.
+              </p>
+            </article>
+            <article>
+              <span class="history-marker">04</span><small>2026</small>
+              <h3>
+                National Expansion
+              </h3>
+              <p>
+                Now operating in eight cities across the US, with an online delivery platform handling more than 10,000 orders each week.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="page-section chefs-section" id="restaurant-chefs">
+        <div class="content-width">
+          <div class="section-heading centered-title">
+            <span class="section-label">The Culinary Team</span>
+            <h2>
+              Meet Our Expert <em>Chefs</em>
+            </h2>
+          </div>
+          <div class="chef-grid">
+            <article class="chef-card">
+              <div class="chef-photo">
+                <img src="image/chefs/1.jpg" alt="Alice Mortal, head chef"><span class="chef-social"><span aria-label="Instagram"><svg class="social-icon" aria-hidden="true"><use href="#brand-instagram"/></svg></span><span aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#brand-facebook"/></svg></span><span aria-label="Twitter"><svg class="social-icon" aria-hidden="true"><use href="#brand-twitter"/></svg></span></span>
+              </div>
+              <div class="chef-info">
+                <div>
+                  <h3>
+                    Alice Mortal
+                  </h3>
+                  <small>Head Chef</small>
+                </div>
+                <span class="chef-experience">12 years experience</span>
+              </div>
+            </article>
+            <article class="chef-card">
+              <div class="chef-photo">
+                <img src="image/chefs/2.jpg" alt="Michael Corn, grill master"><span class="chef-social"><span aria-label="Instagram"><svg class="social-icon" aria-hidden="true"><use href="#brand-instagram"/></svg></span><span aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#brand-facebook"/></svg></span><span aria-label="Twitter"><svg class="social-icon" aria-hidden="true"><use href="#brand-twitter"/></svg></span></span>
+              </div>
+              <div class="chef-info">
+                <div>
+                  <h3>
+                    Michael Corn
+                  </h3>
+                  <small>Grill Master</small>
+                </div>
+                <span class="chef-experience">8 years experience</span>
+              </div>
+            </article>
+            <article class="chef-card">
+              <div class="chef-photo">
+                <img src="image/chefs/3.jpg" alt="Faz Chowdel, pastry chef"><span class="chef-social"><span aria-label="Instagram"><svg class="social-icon" aria-hidden="true"><use href="#brand-instagram"/></svg></span><span aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#brand-facebook"/></svg></span><span aria-label="Twitter"><svg class="social-icon" aria-hidden="true"><use href="#brand-twitter"/></svg></span></span>
+              </div>
+              <div class="chef-info">
+                <div>
+                  <h3>
+                    Faz Chowdel
+                  </h3>
+                  <small>Pastry Chef</small>
+                </div>
+                <span class="chef-experience">10 years experience</span>
+              </div>
+            </article>
+            <article class="chef-card">
+              <div class="chef-photo">
+                <img src="image/chefs/4.jpg" alt="William Latnum, pizza artisan"><span class="chef-social"><span aria-label="Instagram"><svg class="social-icon" aria-hidden="true"><use href="#brand-instagram"/></svg></span><span aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#brand-facebook"/></svg></span><span aria-label="Twitter"><svg class="social-icon" aria-hidden="true"><use href="#brand-twitter"/></svg></span></span>
+              </div>
+              <div class="chef-info">
+                <div>
+                  <h3>
+                    William Latnum
+                  </h3>
+                  <small>Pizza Artisan</small>
+                </div>
+                <span class="chef-experience">9 years experience</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+<section class="reservation-section" id="table-reservation">
+        <div class="content-width reservation-content">
+          <div class="reservation-intro">
+            <span class="section-label">Book a Table</span>
+            <h2>
+              Make a <em>Reservation</em>
+            </h2>
+            <p>
+              Reserve your table for a memorable dining experience. We recommend booking 24 hours in advance for weekend evenings.
+            </p>
+            <div class="reservation-card">
+              <h3>
+                Contact Info
+              </h3>
+              <p>
+                We're happy to help you plan the perfect dining experience.
+              </p>
+              <div>
+                <span class="reservation-icon"><svg class="ui-icon"><use href="#svg-clock"/></svg></span><span><small>OPENING HOURS</small><strong>Wed – Sun, 9 AM – 11 PM</strong></span>
+              </div>
+              <div>
+                <span class="reservation-icon"><svg class="ui-icon"><use href="#svg-phone"/></svg></span><span><small>CALL FOR BOOKING</small><a href="tel:+18001234567">+1 (800) 123-4567</a></span>
+              </div>
+              <div>
+                <span class="reservation-icon"><svg class="ui-icon"><use href="#svg-group"/></svg></span><span><small>GROUP DINING</small><strong>Special menus for 10+ guests</strong></span>
+              </div>
+              <div>
+                <span class="reservation-icon"><svg class="ui-icon"><use href="#svg-location-marker"/></svg></span><span><small>LOCATION</small><strong>42 Flavor Street, NY</strong></span>
+              </div>
+            </div>
+          </div>
+          <form class="booking-form" action="#table-reservation" method="get">
+            <div class="form-fields">
+              <label>
+                Full Name *<input type="text" name="name" placeholder="John Doe" required>
+              </label>
+              <label>
+                Phone Number *<input type="tel" name="phone" placeholder="+1 (800) 000-0000" required>
+              </label>
+              <label>
+                Email Address *<input type="email" name="email" placeholder="you@email.com" required>
+              </label>
+              <label>
+                Number of Guests *<select name="guests" required><option value="1" selected>1 Person</option><option value="2">2 People</option><option value="3">3 People</option><option value="4">4 People</option><option value="5">5 People</option><option value="6">6 People</option></select>
+              </label>
+              <label>
+                Date *<input type="date" name="date" required>
+              </label>
+              <label>
+                Time *<select name="time" required><option value="09:00" selected>09:00 AM</option><option value="12:00">12:00 PM</option><option value="13:00">01:00 PM</option><option value="18:00">06:00 PM</option><option value="19:00">07:00 PM</option><option value="20:00">08:00 PM</option></select>
+              </label>
+              <label class="wide-field">
+                Special Requests<textarea name="requests" rows="3" placeholder="Allergies, dietary needs, special occasions..."></textarea>
+              </label>
+            </div>
+            <button class="primary-button submit-button" type="submit"><svg class="ui-icon"><use href="#svg-calendar"/></svg> Confirm Reservation</button>
+          </form>
+        </div>
+      </section>
+      <section class="page-section blog-section" id="restaurant-blog">
+        <div class="content-width">
+          <div class="section-heading menu-heading">
+            <div>
+              <span class="section-label">News &amp; Updates</span>
+              <h2>
+                Our Latest <em>Blog</em> Posts
+              </h2>
+            </div>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <a class="post-image" href="#restaurant-blog"><img src="image/blog/1.jpg" alt="A colourful fresh meal"><span>14 <small>MAR</small></span></a>
+              <div class="post-copy">
+                <div class="post-category">
+                  <span>FOOD &amp; HEALTH</span>
+                </div>
+                <h3>
+                  <a href="#restaurant-blog">Healthy Fast Food: A Myth or Beautiful Reality</a>
+                </h3>
+                <div class="post-footer">
+                  <div class="post-meta">
+                    <span><svg class="ui-icon"><use href="#svg-user"/></svg> James Writer</span><span><svg class="ui-icon"><use href="#svg-comment"/></svg> 24 Comments</span>
+                  </div>
+                  <a href="#restaurant-blog">Read More <b>→</b></a>
+                </div>
+              </div>
+            </article>
+            <article class="blog-card">
+              <a class="post-image" href="#restaurant-blog"><img src="image/blog/2.jpg" alt="Fresh ingredients ready for cooking"><span>28 <small>FEB</small></span></a>
+              <div class="post-copy">
+                <div class="post-category">
+                  <span>FOOD SCIENCE</span>
+                </div>
+                <h3>
+                  <a href="#restaurant-blog">Is Fast Food Getting Healthier? Here's What We Found</a>
+                </h3>
+                <div class="post-footer">
+                  <div class="post-meta">
+                    <span><svg class="ui-icon"><use href="#svg-user"/></svg> Sarah Grain</span><span><svg class="ui-icon"><use href="#svg-comment"/></svg> 18 Comments</span>
+                  </div>
+                  <a href="#restaurant-blog">Read More <b>→</b></a>
+                </div>
+              </div>
+            </article>
+            <article class="blog-card">
+              <a class="post-image" href="#restaurant-blog"><img src="image/blog/3.jpg" alt="A chef preparing a recipe"><span>05 <small>JAN</small></span></a>
+              <div class="post-copy">
+                <div class="post-category">
+                  <span>RECIPES</span>
+                </div>
+                <h3>
+                  <a href="#restaurant-blog">Innovative Hot Chickpeas Flake Crackin' Recipe at Home</a>
+                </h3>
+                <div class="post-footer">
+                  <div class="post-meta">
+                    <span><svg class="ui-icon"><use href="#svg-user"/></svg> Chef Marcus</span><span><svg class="ui-icon"><use href="#svg-comment"/></svg> 32 Comments</span>
+                  </div>
+                  <a href="#restaurant-blog">Read More <b>→</b></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter-section" id="email-newsletter">
+        <div class="content-width newsletter-content">
+          <div>
+            <span class="section-label section-eyebrow">Stay Connected</span>
+            <h2>
+              Subscribe &amp; Get Exclusive <em>Deals</em>
+            </h2>
+            <p>
+              Get 15% off your first order plus early access to new menu items.
+            </p>
+          </div>
+          <form class="newsletter-form" action="#email-newsletter" method="get">
+            <label class="sr-only" for="newsletter-email-field">
+              Email address
+            </label>
+            <input id="newsletter-email-field" type="email" name="email" placeholder="Enter your email address..." required><button type="submit">Subscribe</button><small>No spam, unsubscribe anytime.</small>
+          </form>
+        </div>
+      </section>
+      <section class="page-section contact-section" id="restaurant-contact">
+        <div class="content-width">
+          <div class="section-heading centered-title">
+            <span class="section-label">Get In Touch</span>
+            <h2>
+              Contact <em>Us</em>
+            </h2>
+            <p>
+              Have a question, feedback, or want to plan a special event? We'd love to hear from you.
+            </p>
+          </div>
+          <div class="contact-layout">
+            <div class="contact-card">
+              <h3>
+                Let's Talk
+              </h3>
+              <p>
+                We typically respond within 2 hours during business hours.
+              </p>
+              <div class="contact-methods">
+                <div>
+                  <span class="contact-icon"><svg class="ui-icon"><use href="#svg-location-marker"/></svg></span><span><small>ADDRESS</small><strong>42 Flavor Street, Manhattan,<br>New York, NY 10001</strong></span>
+                </div>
+                <div>
+                  <span class="contact-icon"><svg class="ui-icon"><use href="#svg-phone"/></svg></span><span><small>PHONE</small><a href="tel:+18001234567">+1 (800) 123-4567</a></span>
+                </div>
+                <div>
+                  <span class="contact-icon"><svg class="ui-icon"><use href="#svg-email"/></svg></span><span><small>EMAIL</small><a href="mailto:hello@sarabfood.com">hello@sarabfood.com</a></span>
+                </div>
+                <div>
+                  <span class="contact-icon"><svg class="ui-icon"><use href="#svg-clock"/></svg></span><span><small>WORKING HOURS</small><strong>Wed – Sun: 9 AM – 11 PM</strong></span>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#restaurant-contact" aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#brand-facebook"/></svg></a><a href="#restaurant-contact" aria-label="Instagram"><svg class="social-icon" aria-hidden="true"><use href="#brand-instagram"/></svg></a><a href="#restaurant-contact" aria-label="Twitter"><svg class="social-icon" aria-hidden="true"><use href="#brand-twitter"/></svg></a><a href="#restaurant-contact" aria-label="YouTube"><svg class="social-icon" aria-hidden="true"><use href="#brand-youtube"/></svg></a>
+              </div>
+            </div>
+            <form class="contact-form" action="#restaurant-contact" method="get">
+              <div class="form-fields">
+                <label>
+                  Your name *<input type="text" name="name" placeholder="John Doe" required>
+                </label>
+                <label>
+                  Email address *<input type="email" name="email" placeholder="you@email.com" required>
+                </label>
+                <label>
+                  Phone number<input type="tel" name="phone" placeholder="+1 (800) 000-0000">
+                </label>
+                <label>
+                  Subject *<select name="subject" required><option value="" disabled selected>Choose a subject</option><option>General question</option><option>Order support</option><option>Private event</option><option>Feedback</option></select>
+                </label>
+                <label class="wide-field">
+                  Message *<textarea name="message" rows="5" placeholder="Tell us a little more..." required></textarea>
+                </label>
+              </div>
+              <button class="primary-button" type="submit">Send Message <svg class="ui-icon"><use href="#svg-arrow"/></svg></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer" id="site-footer">
+      <div class="content-width footer-columns">
+        <div class="footer-brand">
+          <a class="brand-link footer-logo" href="#home-section"><span>S<span>arab</span><small>FAST FOOD &amp; RESTAURANT</small></span></a>
+          <p>
+            We bring the world's finest flavors together in a fast, friendly, and affordable experience. Every meal crafted with love.
+          </p>
+          <div class="social-links">
+            <a href="#site-footer" aria-label="Facebook"><svg class="social-icon" aria-hidden="true"><use href="#brand-facebook"/></svg></a><a href="#site-footer" aria-label="Instagram"><svg class="social-icon" aria-hidden="true"><use href="#brand-instagram"/></svg></a><a href="#site-footer" aria-label="Twitter"><svg class="social-icon" aria-hidden="true"><use href="#brand-twitter"/></svg></a><a href="#site-footer" aria-label="YouTube"><svg class="social-icon" aria-hidden="true"><use href="#brand-youtube"/></svg></a><a href="#site-footer" aria-label="TikTok"><svg class="social-icon" aria-hidden="true"><use href="#brand-tiktok"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>
+            Quick Links
+          </h3>
+          <a href="#home-section">Home</a><a href="#restaurant-about">About Us</a><a href="#restaurant-menu">Our Menu</a><a href="#table-reservation">Reservation</a><a href="#restaurant-blog">Blog</a><a href="#restaurant-contact">Contact</a>
+        </div>
+        <div class="footer-nav">
+          <h3>
+            Our Menu
+          </h3>
+          <a href="#menu-burgers">Burgers</a><a href="#menu-pizza">Pizza</a><a href="#menu-chicken">Fried Chicken</a><a href="#menu-wraps">Wraps &amp; Rolls</a><a href="#menu-pasta">Pasta</a><a href="#menu-desserts">Desserts</a>
+        </div>
+        <div class="footer-contact">
+          <h3>
+            Get In Touch
+          </h3>
+          <div class="contact-row">
+            <span class="footer-icon"><svg class="ui-icon"><use href="#svg-location-marker"/></svg></span><span><strong>Address</strong><small>42 Flavor Street, Manhattan, NY 10001</small></span>
+          </div>
+          <div class="contact-row">
+            <span class="footer-icon"><svg class="ui-icon"><use href="#svg-phone"/></svg></span><span><strong>Phone</strong><small>+1 (800) 123-4567</small></span>
+          </div>
+          <div class="contact-row">
+            <span class="footer-icon"><svg class="ui-icon"><use href="#svg-email"/></svg></span><span><strong>Email</strong><small>hello@sarabfood.com</small></span>
+          </div>
+          <div class="contact-row">
+            <span class="footer-icon"><svg class="ui-icon"><use href="#svg-clock"/></svg></span><span><strong>Hours</strong><small>Wed – Sun: 09 AM – 11 PM</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="content-width footer-bottom">
+        <div class="footer-credit">
+          <span>© 2026 <a href="#site-footer">Sarab Restaurant</a>. All Rights Reserved by <a href="#site-footer">Bestwpware</a>. Made with <b>♥</b></span><span>Distributed by <a href="#site-footer">ThemeWagon</a></span>
+        </div>
+        <div class="footer-policies">
+          <a href="#site-footer">Privacy Policy</a><a href="#site-footer">Terms</a><a href="#site-footer">Cookies</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-top" href="#home-section" aria-label="Back to top">↑</a>
+  </body>
+</html>
